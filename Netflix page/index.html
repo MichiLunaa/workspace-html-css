@@ -30,21 +30,35 @@
                 <img src="./img/letras all those voices.png" class="movieTitle">
                 <h4>
                     <span>2024</span>
-                    <span>8+</span>
+                    <span><i>8+</i></span>
                     <span>1hr 48min</span>
                     <span>Documental</span>
                 </h4>
                 <p>
                     Louis Tomlinson es un cantante y compositor británico, que saltó a la fama tras participar en la versión británica de Factor X y pasó a formar parte de la boy band One Direction, ha construido una breve, pero muy asentada carrera en solitario, lo que le ha llevado a convertirse en un fenómeno de masas en todo el planeta.
                 </p>
-                <div>
+                <div class="buttons">
                     <a href="#">Play</a>
                     <a href="#">My list</a>
                 </div>
             </div>
-            <a href="#" class="Play" ><img src="./img/play.png">Watch trailer</a>
+            <a href="#" class="Play"  onclick="toggleVideo();"><img src="./img/play.png">Watch trailer</a>
+        </section>
+        <section class="trailer">
+            <video src="https://youtu.be/K0UZuiqToow?si=26ysE88mP36maYWc" controls="true"></video>
+            <img src="./img/close.png" class="close"
+            onclick="toggleVideo();">
         </section>
     </main>
+    <script>
+        function toggleVideo(){
+            const trailer=document.querySelector(".trailer");
+            const video = document.querySelector("video");
+            trailer.classList.toggle("active");
+            video.currentTime=0;
+            video.pause();
+        }
+    </script>
 </body>
 
 </html>
