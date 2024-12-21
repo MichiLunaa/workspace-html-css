@@ -1,0 +1,77 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(204, 240, 245);
+}
+
+.imagenes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.imagenes-container .imagen {
+    position: relative;
+    margin-right: -20px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.imagenes-container .imagen img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagenes-container .imagen .nombre {
+    position: absolute;
+    background-color: rgb(143, 230, 241);
+    border-radius: 15px;
+    color: rgb(83, 151, 153);
+    display: none;
+    min-width: 100px;
+    width: 100px;
+    top: -5px;
+    left: calc(3%);
+    padding: 10px 15px;
+}
+
+.mewtwo {
+    margin: 30px 0 0 18px;
+    width: 125px !important;
+    height: 130px !important;
+}
+
+.imagenes-container .imagen .nombre .text {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.imagenes-container .imagen:hover .nombre {
+    display: inline-block;
+    transform: translateY(-18px);
+}
+
+.imagenes-container .imagen:hover img {
+    transform: translateY(-8px);
+}
+
+@media (max-width: 680px) {
+    .imagenes-container {
+        flex-direction: column;
+    }
+
+    .imagenes-container .imagen.eevee {
+        margin-top: 500px;
+    }
+
+    .imagenes-container .imagen .mewtwo {
+        margin-bottom: 100px;
+    }
+}
