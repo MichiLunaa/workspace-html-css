@@ -1,0 +1,96 @@
+@charset "UTF-8";
+:root {
+  --color1:#9ce5ea;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 80%;
+}
+
+*,
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--color1);
+  background-image: url(../img/realistic-transparent-3d-bubbles-underwater-soap-bubbles-illustration-png.webp);
+  background-size: 200px;
+  background-repeat: repeat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #c5f6f0;
+  width: 328px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 2px 2px 15px black;
+}
+.card-header {
+  width: 328px;
+  height: 150px;
+  display: block;
+}
+.card-body {
+  width: 328px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #4f7b8e, #7BCFE1);
+  align-items: center;
+  border-bottom: 1px solid #01304c;
+}
+.card-body-contentimg {
+  border: 5px solid #013959;
+  border-radius: 50%;
+  background-color: #4f7b8e;
+  box-shadow: 0px -10px 20px #4f7b8e;
+  margin-top: -58px;
+}
+.card-body-contentimg-img {
+  padding: 20px;
+}
+.card-body-title {
+  font-size: 2rem;
+  color: #01304c;
+}
+.card-body-text {
+  color: #01304c;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 80%;
+}
+.card-footer {
+  background: linear-gradient(to right, #4f7b8e, #7BCFE1);
+  color: #01304c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-footer-tipo {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-align: center;
+}
+.card-footer-Daño {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-align: center;
+}
+.card-footer-Debilidad {
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
