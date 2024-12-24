@@ -5,6 +5,7 @@
   font-family: sans-serif;
 }
 
+<<<<<<< HEAD
 .material-icons {
   font-family: "Material Icons";
   font-weight: normal;
@@ -32,6 +33,13 @@ body {
 }
 
 header {
+=======
+body {
+  background: black;
+}
+
+heather {
+>>>>>>> a584dbfa6b3d8890783b7823eb2e457cbe27cd54
   position: absolute;
   top: 0;
   left: 0;
@@ -42,7 +50,11 @@ header {
   padding: 30px 100px;
   z-index: 100;
 }
+<<<<<<< HEAD
 header .logo img {
+=======
+heather .logo img {
+>>>>>>> a584dbfa6b3d8890783b7823eb2e457cbe27cd54
   max-width: 150px;
 }
 
@@ -54,13 +66,21 @@ header .logo img {
   margin: 0 10px;
 }
 .navigation li a {
+<<<<<<< HEAD
   color: #fff;
+=======
+  color: white;
+>>>>>>> a584dbfa6b3d8890783b7823eb2e457cbe27cd54
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 1px;
 }
 .navigation li:hover a {
+<<<<<<< HEAD
   color: #de0611;
+=======
+  color: red;
+>>>>>>> a584dbfa6b3d8890783b7823eb2e457cbe27cd54
 }
 
 .search {
@@ -74,16 +94,26 @@ header .logo img {
   left: 0;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   color: #fff;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5);
   outline: none;
   border-radius: 4px;
   padding: 0 10px 0 35px;
+=======
+  color: white;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  border-radius: 5px;
+  padding: 0 10px 0 45px;
+>>>>>>> a584dbfa6b3d8890783b7823eb2e457cbe27cd54
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
 .search input::-moz-placeholder {
+<<<<<<< HEAD
   color: #fff;
 }
 .search input::placeholder {
@@ -96,6 +126,12 @@ header .logo img {
   top: 25%;
   background: transparent;
   left: 2%;
+=======
+  color: white;
+}
+.search input::placeholder {
+  color: white;
+>>>>>>> a584dbfa6b3d8890783b7823eb2e457cbe27cd54
 }
 
 .banner {
@@ -116,6 +152,7 @@ header .logo img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+<<<<<<< HEAD
 .banner .sombraImg {
   position: absolute;
   background: linear-gradient(45deg, black 30%, transparent);
@@ -270,6 +307,11 @@ header .logo img {
 }
 @media (max-width: 600px) {
   header {
+=======
+
+@media (max-width: 600px) {
+  heather {
+>>>>>>> a584dbfa6b3d8890783b7823eb2e457cbe27cd54
     padding: 20px;
   }
   .search {
@@ -277,6 +319,7 @@ header .logo img {
     width: calc(100% - 20px);
     height: 40px;
   }
+<<<<<<< HEAD
   .banner {
     padding: 220px 20px 120px;
   }
@@ -285,4 +328,6 @@ header .logo img {
     font-size: 1em;
     bottom: 30px;
   }
+=======
+>>>>>>> a584dbfa6b3d8890783b7823eb2e457cbe27cd54
 }/*# sourceMappingURL=style.css.map */
