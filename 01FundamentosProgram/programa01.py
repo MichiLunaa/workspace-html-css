@@ -8,4 +8,3 @@ nombre = input('por favor ingrese su nombre: ')
 #concateno el contenido de la variable de salida
 print('='*30) #que se repita 30 veces
 print('Bienvenid@', nombre, '. Este es tu primer programa en Python') 
-
