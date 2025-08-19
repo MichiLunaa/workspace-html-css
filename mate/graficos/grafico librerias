@@ -1,0 +1,8 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+#valor de comienzo y fin del eje x (var. independiente)
+x=np.arange(0, 5, 0.1)
+
+
+plt.plot(x,s(x))
