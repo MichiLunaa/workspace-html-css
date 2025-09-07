@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="harryStyles.css" />
+    <title>S&L Soluciones integrales SPA</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"> <img src="./img/erasebg-transformed (4).png" alt="Logo" />
+                <a href="#">S&L Soluciones Integrales</a></div>
+            <ul class="links">
+                <li><a href="hero">Inicio</a></li>
+                <li><a href="about">Sobre nosotros</a></li>
+                <li><a href="services">Servicios</a></li>
+                <li><a href="contact">Contacto</a></li>
+            </ul>
+            <a href="#" class="action_btn">Contactanos</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="hero">Inicio</a></li>
+            <li><a href="about">Sobre nosotros</a></li>
+            <li><a href="services">Servicios</a></li>
+            <li><a href="contact">Contacto</a></li>
+            <li><a href="#" class="action_btn">Get started</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Bienvenidos!</h1>
+            <h4> </h4>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.getElementsByClassName('toggle_btn')[0];
+        const toggleBtnIcon = toggleBtn.getElementsByTagName('i')[0];
+        const dropDownMenu = document.getElementsByClassName('dropdown_menu')[0];
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>
