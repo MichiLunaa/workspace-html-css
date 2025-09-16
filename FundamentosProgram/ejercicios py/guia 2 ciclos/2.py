@@ -12,6 +12,13 @@ i = 1
 while i <= cantestudiantes: 
     nota = float(input("Ingrese nota: "))
     suma_notas = suma_notas + nota
+    
+    if cantestudiantes == 0:
+        bono = 0.0
+        bono_05 = 0
+        bono_08 = 0
+        bono_10 = 0
+        nota_mayor = 0.0
 
     if nota > nota_mayor:
         nota_mayor = nota
@@ -33,12 +40,13 @@ while i <= cantestudiantes:
                     bono_10 = bono_10 + 1
                 else:
                     bono = 0.0
-                    sin_bono = sin_bono + 1
-    
+                    sin_bono = sin_bono + 1         
+               
     print("El bono para este estudiante es:", bono)
     i = i + 1
+    
+    promedio = suma_notas / cantestudiantes
 
-promedio = suma_notas / cantestudiantes
 
 print("***** Estadística *****")
 print("Cantidad de alumnos sin bono:", sin_bono)
